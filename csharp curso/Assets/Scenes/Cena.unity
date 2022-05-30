@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 239017710}
   - component: {fileID: 239017711}
   m_Layer: 0
-  m_Name: Objeto
+  m_Name: "C# B\xE1sico"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
