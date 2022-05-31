@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Prop : MonoBehaviour
+public class Prop : MonoBehaviour, IDamegeable
 {
-    // Start is called before the first frame update
-    void Start()
+    public int currentHealth { get; set; }
+
+    public void ApplyDamage(int damage)
     {
-        
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            DestroyProp();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void DestroyProp()
     {
-        
+        //codigo para destruir...
     }
 }
